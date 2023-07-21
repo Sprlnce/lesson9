@@ -1,7 +1,7 @@
 def ispolindrom(word = str):
     if str(word) == "".join(reversed(word)):
-        print("Palindrome")
+        print(True)
     else:
-        print("Not Palindrome")
+        print(False)
 
 ispolindrom("dghhgd")

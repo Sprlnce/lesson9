@@ -1,0 +1,49 @@
+h1 {
+    background: red;
+}
+
+.paragraph-gb {
+    background: blue;
+    font-size: 32pt;
+    color: green;
+}
+
+.paragraph-2 {
+    background: gray;
+    border-radius: 5px;
+    border-color: brown;
+    border-width: 5px;
+    font-size: 24pt;
+    width: 50%
+}
+
+.div-1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20pt;
+    margin-left: 60px;
+    text-align: left;
+
+}
+
+.image-1 {
+    border-radius: 15px;
+}
+
+body {
+    background-image: url('wallpaper.jpeg');
+}
+
+.container {
+    position: relative;
+    text-align: left;
+    color: white;
+}
+
+.centered {
+    position: absolute;
+    top: 87%;
+    left: 50%;
+    transform: translate(-290%, -50%);
+    font-family:'IntelOne Mono Light 300';
+    font-size: 30px;
+}

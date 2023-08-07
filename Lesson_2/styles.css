@@ -6,6 +6,7 @@ h1 {
     background: blue;
     font-size: 32pt;
     color: green;
+    text-align: center;
 }
 
 .paragraph-2 {
@@ -46,4 +47,12 @@ body {
     transform: translate(-290%, -50%);
     font-family:'IntelOne Mono Light 300';
     font-size: 30px;
+}
+
+.paragraph-4 {
+    background: white;
+    font-style: italic;
+    text-align: center;
+    font-size: 24px;
+    text-shadow: -2px 1px green;
 }

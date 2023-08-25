@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-{% extends 'base.html' %} {% load static %}
+{% extends 'base.html' %}
 {% load static %}
 <html lang="en">
   <head>
@@ -125,17 +125,18 @@
           </div>
         </form>
       </div>
-      {% for adv in advertisements %}
+
+      {% for adv in advertisements %} 
       <div class="col">
         <div class="card mb-2" style="max-width: 1200px; margin-top: 20px">
           <div class="row g-0">
             <div class="col-md-4">
               <a href="advertisement.html" class="nav-link">
-                <img
-                  src="{% static 'img/image.png' %}"
-                  class="img-fluid rounded-start"
-                  alt="Card title"
-                />
+                {% if adv.image %}
+                  <img src=" {{adv.image.url}} " class="img-fluid rounded-start" alt="Card title">
+                {% else %}
+                  <img src="{% static 'img\image.png' %}" class="img-fluid rounded-start" alt="Card title">
+                {% endif %}
               </a>
             </div>
             <div class="col-md-8">
@@ -148,7 +149,7 @@
                   <p class="card-text">
                     {{ adv.text }}
                   </p>
-                  <span>Автор: {{ adv.author}} </span>
+                  <span>Автор: {{ adv.author }} </span>
                   <p class="card-text">Размещено: {{ adv.created_at }} </p>
                   <span>Цена: {{ adv.price }}</span>
                 </a>
